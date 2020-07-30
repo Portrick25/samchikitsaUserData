@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>zoomData</title>
+</head>
+<body>
+    <h1>zoom Data For Homeopathic telecunsultation</h1>
+    <table class="skypetable" id= "id-list">
+        <tr id="">
+            <td id="name">Name</td>
+            <td id= "id">Zoom ID</td>
+        </tr>
+    </table>
+    <h1>zoom Data For offline appointment</h1>
+    <table class="skypetable" id= "idoff-list">
+        <tr id="">
+            <td id="time">Time</td>
+            <td id="name">Name</td>
+            <td id= "id">Zoom ID</td>
+        </tr>
+    </table>
+
+    
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+        
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyC1SSuF6ibJw6vpzbb38WDVBl2f4EWXYJY",
+            authDomain: "samchikitsa-f6d9b.firebaseapp.com",
+            databaseURL: "https://samchikitsa-f6d9b.firebaseio.com",
+            projectId: "samchikitsa-f6d9b",
+            storageBucket: "samchikitsa-f6d9b.appspot.com",
+            messagingSenderId: "196670220970",
+            appId: "1:196670220970:web:201a0e8a9cce3cefb27ed3",
+            measurementId: "G-TBY5QYXRB6"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+          const db = firebase.firestore()
+        </script>
+        <script src="app2.js">
+        </script>
+    
+</body>
+</html>
